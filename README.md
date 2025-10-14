@@ -17,4 +17,4 @@ Software:
 - Fieldtrip (last tested with fieldtrip-20250114) - [download](https://www.fieldtriptoolbox.org/download)
 
 Notes:  
-- Open and run the batch script (run_batch) to run through all scripts and reproduce the published results.
+- Open and run the batch script (`run_batch`) to run through all scripts and reproduce the published results.
