@@ -10,7 +10,7 @@
 % set directories
 pth = pwd;
 datdir = fullfile(pth, 'All_Data_clean_z');
-savdir = fullfile(datdir, 'All_Data_HFB');
+savdir = fullfile(pth, 'All_Data_HFB');
 mkdir(savdir);
 
 % set up HFB filter
@@ -53,4 +53,5 @@ for s = 1:length(files)
 
     clear *norm2 *eeg
 end
+
 
