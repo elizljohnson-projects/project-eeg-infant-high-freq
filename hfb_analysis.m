@@ -27,7 +27,7 @@ cfg.keeptrials = 'yes';
 files = dir(fullfile(datdir, 'Subj*'));
 for s = 1:length(files)
     % load data
-    load(fullfile(datdir, files(s).name, '*eeg'));
+    load(fullfile(datdir, files(s).name));
 
     % compute HFB
     sleep_eeg = ft_freqanalysis(cfg, sleep_eeg);
@@ -53,3 +53,4 @@ for s = 1:length(files)
 
     clear *norm2 *eeg
 end
+
