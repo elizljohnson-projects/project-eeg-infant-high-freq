@@ -26,7 +26,7 @@ awake = sleep;
 % loop through datasets
 for s = 1:length(files)
     % load data
-    load(fullfile(datdir, files(s).name), '*eeg');
+    load(fullfile(datdir, files(s).name));
     
     % finish initializing structures
     if s == 1
@@ -48,3 +48,4 @@ end
 
 % save
 save(fullfile(savdir, 'hfb_ga_trl'), 'sleep', 'awake');
+
